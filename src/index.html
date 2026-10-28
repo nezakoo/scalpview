@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Scalpview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/*@CSS@*/
+</style>
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="tb-group" id="tb-mode"></div>
+    <div class="tb-group" id="tb-page"></div>
+    <div class="tb-spacer"></div>
+    <div class="tb-group seg" id="tb-tf"></div>
+    <div class="tb-group" id="tb-sort"></div>
+    <div class="tb-group" id="tb-grid"></div>
+    <div class="tb-group" id="tb-filter"></div>
+    <div class="tb-spacer"></div>
+    <div class="tb-group" id="tb-status"></div>
+    <button class="tb-btn" id="btn-search" title="Search (any key)">⌕</button>
+    <button class="tb-btn" id="btn-settings" title="Settings">⚙ Settings</button>
+    <button class="tb-btn" id="btn-full" title="Fullscreen">⛶</button>
+  </header>
+  <main id="main">
+    <section id="board"></section>
+    <aside id="side">
+      <div id="list"></div>
+      <div id="side-dock"></div>
+    </aside>
+    <div id="panels"></div>
+    <nav id="rtb"></nav>
+  </main>
+</div>
+<div id="search" class="overlay hidden">
+  <div class="search-box">
+    <input id="search-input" autocomplete="off" spellcheck="false" placeholder="Ticker…">
+    <div id="search-results"></div>
+  </div>
+</div>
+<div id="settings" class="overlay hidden">
+  <div class="settings-box">
+    <div class="settings-tabs" id="settings-tabs"></div>
+    <div class="settings-body" id="settings-body"></div>
+    <button class="settings-close" id="settings-close">✕</button>
+  </div>
+</div>
+<div id="toasts"></div>
+<script>
+/*@JS@*/
+</script>
+</body>
+</html>

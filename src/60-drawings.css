@@ -1,0 +1,9 @@
+/* drawings toolbar (60-drawings.js) */
+.sbd-bar { position: absolute; z-index: 5; display: none; flex-direction: column; gap: 1px;
+  background: rgba(20, 20, 20, 0.85); border: 1px solid var(--border, #242424); border-radius: 3px; padding: 1px; }
+.sbd-host:hover .sbd-bar, .sbd-bar.sbd-show, body.sbd-tool-on .sbd-bar { display: flex; }
+.sbd-bar button { width: 20px; height: 20px; padding: 0; display: flex; align-items: center; justify-content: center;
+  background: transparent; border: 0; border-radius: 2px; color: var(--dim, #999999); cursor: pointer; }
+.sbd-bar button:hover { color: var(--bright, #f2f2f2); background: var(--panel2, #1a1a1a); }
+.sbd-bar button.on { color: var(--bright, #f2f2f2); background: var(--border2, #333333); }
+.sbd-bar button.armed { color: var(--down, #c74343); }

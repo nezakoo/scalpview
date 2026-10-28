@@ -1,0 +1,7 @@
+.venv/
+docs/
+ref/
+serve/
+test/shot*
+*.tmp
+__pycache__/
